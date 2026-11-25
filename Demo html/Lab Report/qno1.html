@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="">
+             <fieldset>
+            <legend><b>Member Information</b></legend>
+
+            Full Name *:
+            <input type="text" name="fullname" placeholder="As in your ID card" required>
+
+            Student / Staff ID *:
+            <input type="text" name="id" placeholder="e.g. KU-2025-0117" required>
+            <br><br>
+
+            Email *:
+            <input type="email" name="email" placeholder="email@ku.edu.np" required>
+
+            Mobile:
+            <input type="tel" name="mobile" placeholder="9812345678">
+            <br><br>
+
+            Member Type *:
+            <input type="radio" name="member" value="student" checked> Student
+            <input type="radio" name="member" value="faculty"> Faculty
+            <input type="radio" name="member" value="staff"> Staff
+
+            School:
+            <select name="school">
+                <option>--Choose School--</option>
+                <option>School of Engineering</option>
+                <option>School of Science</option>
+                <option>School of Management</option>
+                <option>School of Education</option>
+            </select>
+
+        </fieldset>
+
+ <fieldset>
+            <legend><b>Membership Preferences</b></legend>
+
+            Membership Start Date:
+            <input type="date" name="startdate">
+
+            <label>Duration:</label>
+            <select name="duration">
+                <option>1 Year</option>
+                <option>2 Years</option>
+                <option>3 Years</option>
+            </select>
+            <br><br>
+
+            Sections of Interest
+            <input type="checkbox" name="section" value="reference"> Reference
+            <input type="checkbox" name="section" value="periodicals"> Periodicals
+            <input type="checkbox" name="section" value="thesis"> Thesis Archive
+            <input type="checkbox" name="section" value="elib" checked> E-Library
+            <br><br>
+
+            Books you want the library to buy:<br>
+            <textarea name="books" rows="5" cols="50"style="resize:none;"
+                placeholder="Title, Author, Edition (one per line)"></textarea>
+
+        </fieldset>
+
+        
+        <input type="checkbox" name="mstatus">I agree to follow the library rules and return books on time <br> <br>
+        <input type="button" value="Register">
+        <input type="reset" value="Clear Form">
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+cls
+and backup
+dir

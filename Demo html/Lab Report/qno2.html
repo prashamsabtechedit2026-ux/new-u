@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OPD Registration Form</title>
+</head>
+
+<body>
+
+    <h2 align="center">Dhulikhel Community Hospital</h2>
+    <h3 align="center">OPD Patient Registration Slip</h3>
+
+    <form>
+
+        <fieldset>
+            <legend><b>1. Patient Details</b></legend>
+
+            Patient Name:
+            <input type="text" name="patientname">
+
+            Age:
+            <input type="number" name="age" min="0">
+            years
+            <br><br>
+
+            Sex:
+            <input type="radio" name="sex" value="male"> Male
+            <input type="radio" name="sex" value="female"> Female
+            <input type="radio" name="sex" value="other"> Other
+
+           Blood Group:
+            <select name="bloodgroup">
+                <option>Unknown</option>
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+            </select>
+            <br><br>
+
+            Address:
+            <input type="text" name="address"
+                   placeholder="Municipality, Ward, No., Tole"
+                   size="60">
+
+            <fieldset>
+                <legend>1.1 Emergency Contact</legend>
+
+                Name:
+                <input type="text" name="emergencyname">
+
+                Relation:
+                <select name="relation">
+                    <option>Father</option>
+                    <option>Mother</option>
+                    <option>Brother</option>
+                    <option>Sister</option>
+                    <option>Other</option>
+                </select>
+
+                Phone:
+                <input type="tel" name="emergencyphone">
+
+            </fieldset>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend><b>2. Visit Details</b></legend>
+
+            Department:
+        <input type="text" placeholder="Medicine
+        General Medicine
+
+        
+
+            Visit Date:
+            <input type="date" name="visitdate">
+            <br><br>
+
+            Preferred Time:
+            <input type="time" name="time">
+
+            Visit Type:
+            <input type="radio" name="visittype" value="new"> New
+            <input type="radio" name="visittype" value="followup"> Follow-up
+
+            <br><br>
+
+            Symptoms (tick all that apply):<br>
+
+            <input type="checkbox" name="symptom" value="fever"> Fever
+            <input type="checkbox" name="symptom" value="cough"> Cough
+            <input type="checkbox" name="symptom" value="headache"> Headache
+            <input type="checkbox" name="symptom" value="chestpain"> Chest Pain
+            <input type="checkbox" name="symptom" value="injury"> Injury
+            <input type="checkbox" name="symptom" value="other"> Other
+
+            <br><br>
+
+          
+                Describe the problem and any medicine you are already taking:
+            
+            <br>
+
+            <textarea name="problem" rows="5" cols="60"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Generate OPD Ticket">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main(){
+char ch;
+printf(" enter character ");
+scanf("%c",&ch);
+if (ch=='a' || ch=='A' || ch=='e' || ch=='E' || ch=='i' || ch=='I' || ch=='o' || ch=='O' || ch=='u' || ch=='U' )
+{
+printf ("%c is a vowel\n",ch);
+}
+else if ((ch>='a' && ch<='z') || (ch>='Z' && ch<='Z')){
+printf("%c is a consonant\n",ch);
+}
+else{
+printf("%c is not an alphabet\n",ch);
+}
+}
